@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Oluşturma</title>
+</head>
+<body>
+    <form>
+        Adınız : <input type="text" placeholder="İsminizi giriniz" /> <br> <!-- placeholder gölge text yazar-->
+        Parolanız : <input type="password" placeholder="Şifrenizi giriniz"/> <br>
+        Email : <input type="email" placeholder="Email adresinizi giriniz"> <br> <br>
+        Hobileriniz: <br> <br>
+        Kitap Okumak:<input type="checkbox" id="kitapCheckbox"> <br>
+        Spor Yapmak:<input type="checkbox" id="sporCheckbox"><br> <br>
+        Kadın <input type="radio"name="Cinsiyet" checked="true"> <br> <!-- checked true seçili olarak gelmesini sağlar-->
+        Erkek <input type="radio" name="Cinsiyet"> <br> <br> <!-- name aynı olursa o name e ait seçim 1 tane olabiliyor yani iki kutucuk birden seçilemiyor-->
+        Bize iletmek istedikleriniz : <br> <br>
+        İÇECEKLER <br> <br>
+        <select autofocus> <!-- otofocus yukarı ve aşağı yön tuşları ile kutucuk içeriisnde gezinmemizi sağlıyor
+        multiple birden fazlasını seçmemizi sağlıyor--> 
+            <option value="Çay">Çay</option>
+            <option value="Kahve">Kahve</option>
+            <option value="Limonata">Limonata</option>
+        </select>
+        <br> <br>
+        <textarea name="mesajinizInput" id="mesajAlani" cols="50" rows="10"></textarea> <br> <br>
+        Dosya Seçiniz : <input type="file"> <br> <br>
+        <input type="submit" value="Gönder"> 
+        <input type="reset" value="Temizle"> <br>
+    </form>
+</body>
+</html>
